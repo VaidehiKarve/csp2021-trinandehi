@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    div {
-      background-image: url('https://locationmanagers.org/wp-content/uploads/2018/11/snowy-sky.jpg');
-    }
-    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +8,45 @@
     
 </head>
 
+
 <body>
     <div class="header">
-        <h2>Winter Baking</h2>
-      </div>
-      
-      <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-              <h2>Brownies</h2>
-              <h5>Title description</h5>
-              <img src=https://images.food52.com/-R1CgtyIy_rmh5P19EM7Oe179ks=/1200x675/8726fd06-fc87-4b8f-9e35-7bd71a59d761--2017-0418_12-ways-to-customize-your-brownie-base_promo_julia-gartland_048.jpg style="height:200px;">
-              <p>Some text..</p>
-              <button onclick="mybrownieFunction()">bake!</button>
+      <p style="font-family:'Papyrus; font-size:30px">Winter Baking</p>
+      <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:20px">By Ananya Kunjal, Trisha Konkimalla, Vaidehi Karve</p> 
+    </div>
 
+    <form action="users.php" method="GET">
+      <input id="search" name="search" type="text" placeholder="Type here">
+      <input id="submit" type="submit" value="Search">
+      </form>
+    
+      <div class="row">
+        <div class="middle">
+            <div class="card">
+              <h2 style="text-align:center;">Brownies</h2>
+              <p style="text-align:center;"><img src=https://images.food52.com/-R1CgtyIy_rmh5P19EM7Oe179ks=/1200x675/8726fd06-fc87-4b8f-9e35-7bd71a59d761--2017-0418_12-ways-to-customize-your-brownie-base_promo_julia-gartland_048.jpg style="height:200px;" alt="thing"></p>
+              <p style="text-align:center;"><button onclick="mybrownieFunction()">bake!</button></p>
+              <style>
+                body {
+                  background-image: url('https://t3.ftcdn.net/jpg/02/96/21/60/360_F_296216061_8K8WP4oYdAH0zlEeYYBnGlzJ7j64TmVR.jpg');
+                }
+                </style>
+                
             </div>
           </div>
         </div>
-            <div class="leftcolumn">
+            <div class="middle">
                 <div class="card">
-                  <h2>Cake</h2>
-                  <h5>Title description</h5>
-                  <img src=https://d2j6dbq0eux0bg.cloudfront.net/images/11845110/614220797.jpg style="height:200px;">
-                  <p>Some text..</p>
-                  <button onclick="mycakeFunction()">bake!</button>
+                  <h2 style="text-align:center;">Cake</h2>
+                  <p style="text-align:center;"><img src=https://d2j6dbq0eux0bg.cloudfront.net/images/11845110/614220797.jpg style="height:200px;" alt="thing"></p>
+                  <p style="text-align:center;"><button onclick="mycakeFunction()">bake!</button></p>
 
                 </div>
+                <div class="middle">
           <div class="card">
-            <h2>Cookies</h2>
-            <h5>Title description</h5>
-            <img src =https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/12/19/0/FN_istock_cookie-baking-hacks-opener_s4x3.jpg.rend.hgtvcom.441.331.suffix/1545279748268.jpeg style="height:200px;">
-            <p>Some text..</p>
-            <button onclick="mycookieFunction()">bake!</button>
+            <h2 style="text-align:center;">Cookies</h2>
+            <p style="text-align:center;"><img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/12/19/0/FN_istock_cookie-baking-hacks-opener_s4x3.jpg.rend.hgtvcom.441.331.suffix/1545279748268.jpeg" alt="Logo"></p>
+            <p style="text-align:center;"><button onclick="mycookieFunction()" style="text-align:center;">bake!</button></p>
 
           </div>
         </div>
