@@ -1,0 +1,39 @@
+<html>
+
+<style>
+    body {
+      background-image: url('https://thumbs.dreamstime.com/b/delicate-pink-marble-background-gold-brushstrokes-place-your-design-144989465.jpg');
+    }
+    </style>
+    <form action="results.php" method="post" class="w3-padding-large">
+
+        <div style="color:rgb(10, 72, 126)">
+      
+          
+      
+        <!-- question 1: difficulty -->
+        <div style="text-align:center; font-size:30px" id="question">
+            <br><br><br><br><br><br><br>difficulty? <br>
+            <input type="radio" id="ten" name="q0" value="0">
+            <label for="ten">easy</label><br>
+            <input type="radio" id="twenty" name="q0" value="1">
+            <label for="twenty">medium</label><br>
+            <input type="radio" id="thirty" name="q0" value="2">
+            <label for="thirty">hard</label><br><br>
+        </div>
+        <div style="text-align:center;  font-size:30px" id="question">
+            favorite food? <br>
+            <input type="radio" id="brownies" name="q1" value="0">
+            <label for="brownies">brownies</label><br>
+            <input type="radio" id="cookies" name="q1" value="1">
+            <label for="Cookies">cake</label><br>
+            <input type="radio" id="cakes" name="q1" value="2">
+            <label for="cakes">cookies</label><br>
+        </div>
+        </div>
+        <input type="submit" onClick="foodMatch()"><br>
+      
+        <input hidden type="text" id="bestFoods" name="bestFoods" value="bestFoods">
+      
+      </form>
+</html>
