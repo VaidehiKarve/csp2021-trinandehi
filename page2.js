@@ -17,3 +17,8 @@ object.onclick = function(){myScript};
 function myhomepageFunction(){
     window.open("sem1finalwebsite.html");
 }
+
+object.onclick = function(){myScript};
+function myMatchFunction(){
+    window.open("match.html");
+}

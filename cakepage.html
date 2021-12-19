@@ -5,76 +5,290 @@
     <meta name="viewport" content="width=h1, initial-scale=h1">
     <title>Document</title>
 </head>
-<style>
-    body {
-      background-image: url('https://wallpaperaccess.com/full/624928.jpg');
-    }
-    </style>
-<body>
-    <style>
-        #boxes {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        div {
-          float: left;
-          height: 470px;
-          width: 23%;
-          padding: 0 10px;
-        }
-        #column1 {
-          background-color: #a1edcc;
-        }
-        #column2 {
-          background-color: #a0e9ed;
-          width: 50%;
-        }
-        #column3 {
-          background-color: #f497f1;
-        }
-        h2 {
-          color: #000000;
-          text-align: center;
-        }
 
-        .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-      </style>
-    <h1 style="font-family:Brush Script MT; font-size:50px" > Cake Recipies</h1>
+<script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css" />
+<nav id="menu">
+    <div class="menu-item">
+        <div class="menu-text">
+            <a href="sem1finalwebsite.html"> Home  </a>
+        </div>
+        
+        </div>
     </div>
-    <main id="boxes">
-      <div id="column1">
-        <img src= https://cdn.sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg style="height:300px;" alt="thing">
-            <h1>Triple layer chocolate cake</h1>
-            <h2>
-                20 minutes bake time <br /> 
-                Hard <br />
-                <a href="https://sallysbakingaddiction.com/triple-chocolate-layer-cake/"> recipe </a>
-            </h2>
+    <div class="menu-item highlight">
+        <div class="menu-text">
+            <a href="/browniespage.html"> Brownies  </a>
         </div>
-        <div id="column2">       
-            <img src= https://www.recipetineats.com/wp-content/uploads/2020/08/My-best-Vanilla-Cake_9.jpg style="height:300px;" alt="thing" class="center">
-            <h1 style="text-align:center;">Vanilla Cake</h1>
-            <h2>
-                30 minutes bake time <br /> 
-                Medium <br />
-                <a href="https://www.recipetineats.com/my-very-best-vanilla-cake/"> recipe </a>
-            </h2>
+       
         </div>
-            <div id="column3">
-            <img src= https://www.callmepmc.com/wp-content/uploads/2012/09/Easy-Strawberry-Cake.jpg style="height:300px;" alt="thing" >
-            <h1>Strawberry Cake</h1>
-            <h2>
-                40 minutes bake time <br />
-                Easy <br />
-                <a href="https://www.callmepmc.com/easy-strawberry-cake/"> recipe </a>
-            </h2>
+    </div>
+    <div class="menu-item highlight">
+        <div class="menu-text">
+            <a href="/cakepage.html"> Cakes  </a>
         </div>
+        
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="menu-text">
+            <a href="cookiespage.html"> Cookies  </a>
+        </div>
+        
+        </div>
+    </div>
+</nav>
+</div>
+
+<body>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+  
+  :root {
+    --color: #3c3163;
+    --transition-time: 0.5s;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background: #fafafa;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  .cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+  }
+  
+  .card {
+    font-family: 'Heebo';
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    /*margin: 2em;*/
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    transform: rotate(0);
+  }
+  
+  .card h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  
+  .card p {
+    font-size: 0.75em;
+    font-family: 'Open Sans';
+    margin-top: 0.5em;
+    line-height: 2em;
+  }
+  
+  .card .tags {
+    display: flex;
+  }
+  
+  .card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+  }
+  
+  .card:hover .tags .tag {
+    background: var(--color);
+    color: white;
+  }
+  
+  .card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+  }
+  
+  .card:before, .card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+  }
+  
+  .card:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+  }
+  
+  .card:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+  }
+  
+  .card:hover {
+    color: var(--color);
+  }
+  
+  .card:hover:before, .card:hover:after {
+    transform: scale(1);
+  }
+  
+  .card-grid-space .num {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+  }
+  
+  .info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+  }
+  
+  .info img {
+    height: 3em;
+    margin-right: 0.5em;
+  }
+  
+  .info h1 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 1285px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr;
+    }
+    .info {
+      justify-content: center;
+    }
+    .card-grid-space .num {
+      /margin-left: 0;
+      /text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .cards-wrapper {
+      padding: 4rem 2rem;
+    }
+    .card {
+      max-width: calc(100vw - 4rem);
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .info {
+      display: block;
+      text-align: center;
+    }
+    .info h1 {
+      margin: 0;
+    }
+  }
+  </style>
+  </body>
+
+  <body>
+  <h1 style="font-family:Brush Script MT; font-size:50px" > Cake Recipies</h1>
+  </body>
+  </section>
+  <section class="cards-wrapper">
+    <div class="card-grid-space">
+      <div class="num">01</div>
+      <a class="card" href="https://sallysbakingaddiction.com/triple-chocolate-layer-cake/ " style="--bg-img: url('https://cdn.sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg')">
+        <div>
+          <h1>Tripple Chocolate Layer Cake</h1>
+          <p>Bake Time: 40 Minutes</p>
+          <div class="tags">
+            <div class="tag">Hard</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card-grid-space">
+      <div class="num">02</div>
+      <a class="card" href="https://www.recipetineats.com/my-very-best-vanilla-cake/" style="--bg-img: url('https://www.recipetineats.com/wp-content/uploads/2020/08/My-best-Vanilla-Cake_9.jpg')">
+        <div>
+          <h1>Vanilla Cake</h1>
+          <p>Bake Time: 30 Minutes</p>
+          <div class="tags">
+            <div class="tag">Medium</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card-grid-space">
+      <div class="num">03</div>
+      <a class="card" href="https://www.callmepmc.com/easy-strawberry-cake/" style="--bg-img: url('https://www.callmepmc.com/wp-content/uploads/2012/09/Easy-Strawberry-Cake.jpg')">
+        <div>
+          <h1>Strawberry Cake</h1>
+          <p>Bake Time 20 minutes</p>
+          <div class="tags">
+            <div class="tag">Easy</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+  </section>
+  
+
 
     <h1>Winter Cakes Special</h1>
     <img src=https://thecakegirls.com/media/wysiwyg/snowflake-cake/_MG_1384.jpg style="height:600px;" alt="thing"></imge>
